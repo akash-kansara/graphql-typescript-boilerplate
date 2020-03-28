@@ -56,7 +56,9 @@ describe('User', () => {
             dob: "${tests.add.dob}"
           }) {
             firstname
+            lastname
             email
+            dob
           }
         }
       `)
@@ -66,6 +68,8 @@ describe('User', () => {
         expect(res.body.data.createUser).to.have.property('firstname');
         expect(res.body.data.createUser.email).to.equal(tests.add.email);
         expect(res.body.data.createUser.firstname).to.equal(tests.add.firstname);
+        expect(res.body.data.createUser.lastname).to.equal(tests.add.lastname);
+        expect(res.body.data.createUser.dob).to.equal(tests.add.dob);
         done();
       });
   });

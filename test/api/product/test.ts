@@ -61,6 +61,9 @@ describe('Product', () => {
           }) {
             code
             name
+            desc
+            tag
+            price
           }
         }
       `)
@@ -70,6 +73,9 @@ describe('Product', () => {
         expect(res.body.data.createProduct).to.have.property('name');
         expect(res.body.data.createProduct.code).to.equal(tests.add.code);
         expect(res.body.data.createProduct.name).to.equal(tests.add.name);
+        expect(res.body.data.createProduct.desc).to.equal(tests.add.desc);
+        expect(res.body.data.createProduct.tag).to.equal(tests.add.tag);
+        expect(res.body.data.createProduct.price).to.equal(tests.add.price);
         done();
       });
   });
