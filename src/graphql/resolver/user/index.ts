@@ -61,4 +61,4 @@ export default {
       return user.dob.toISOString().slice(0, 10);
     }
   }
-}
+};

@@ -17,7 +17,7 @@ const saleController: ISaleService = container.get<ISaleService>(TYPES.SaleContr
 
 const subscriptionTopics = {
   post: 'SALE_POSTED'
-}
+};
 
 export default {
   Query: {
@@ -53,7 +53,7 @@ export default {
           throw new (createError(error.statusCode, { message: error.status }))({ data: error });
         }
       }
-    },
+    }
   },
   Sale: {
     user: async (sale: Sale, args: any, context: any, info: any) => {
@@ -71,4 +71,4 @@ export default {
       }
     }
   }
-}
+};

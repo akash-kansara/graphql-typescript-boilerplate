@@ -23,7 +23,7 @@ const options: Options = {
   endpoint: '/graphql',
   subscriptions: '/subscriptions',
   playground: '/playground',
-  formatError: formatError,
+  formatError,
   defaultPlaygroundQuery: 'query { users { firstname lastname fullname email dob } }'
 };
 
@@ -43,11 +43,11 @@ server.start(options, ({ port }) => {
   eventHandler.emit('sys-info', `GraphQL server started at ${port}.`);
 });
 
-let closeApp = async () => {
+const closeApp = async () => {
   try { await repository.disconnect(); } catch (err) { }
   eventHandler.emit('sys-info', 'Shutting down app.');
   process.exit(0);
-}
+};
 
 process.on('SIGINT', () => { closeApp(); });
 process.on('SIGTERM', () => { closeApp(); });

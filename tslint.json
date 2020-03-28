@@ -29,6 +29,9 @@
     "no-empty": {
       "severity": "warning"
     },
+    "curly": {
+      "severity": "warning"
+    },
     "max-line-length": [false, 120]
   },
   "linterOptions": {
