@@ -54,8 +54,11 @@ export default {
     }
   },
   User: {
-    fullname: (user: any, args: any, context: any, info: any) => {
+    fullname: (user: User, args: any, context: any, info: any) => {
       return `${get(user, 'firstname')} ${get(user, 'lastname')}`;
+    },
+    dob: (user: User, args: any, context: any, info: any) => {
+      return user.dob.toISOString().slice(0, 10);
     }
   }
 }

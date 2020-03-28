@@ -56,14 +56,14 @@ export default {
     },
   },
   Sale: {
-    user: async (sale: any, args: any, context: any, info: any) => {
+    user: async (sale: Sale, args: any, context: any, info: any) => {
       try {
         return await userController.fetchOne(get(sale, 'userEmail'));
       } catch (error) {
         throw new (createError(error.statusCode, { message: error.status }))({ data: error });
       }
     },
-    product: async (sale: any, args: any, context: any, info: any) => {
+    product: async (sale: Sale, args: any, context: any, info: any) => {
       try {
         return await productController.fetchOne(get(sale, 'productCode'));
       } catch (error) {
