@@ -10,7 +10,7 @@ This app implements a small retail store wherein store administrators can create
 
 Core idea is to provide service definitions which conform to business logic as interfaces under src/service/ (service definitions). Service definitions may or may not be dependent on a persistent storage (database / external APIs / files) but if it they are, then persistent storage is implemented by implementing corresponding interface at src/repository/ (service repository). Similarly, business logic of a particular service definition is defined at src/controller/ (service controller). If persistent storage is required then service controller depends upon a service repository which implements the relevant service definition. GraphQL resolvers then directly use service controller objects.
 
-For rest of things such as DB implementation, etc. refer [Project structure](https://github.com/akash-kansara/express-typescript-boilerplate#project-structure)
+For rest of things such as DB implementation, etc. refer [Project structure](https://github.com/akash-kansara/graphql-typescript-boilerplate#project-structure)
 
 ## Project structure
 | Folder Path | Description |
