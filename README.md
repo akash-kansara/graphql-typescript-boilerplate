@@ -1,4 +1,5 @@
 # GraphQL TypeScript Boilerplate
+[![GitHub version](https://badge.fury.io/gh/akash-kansara%2Fgraphql-typescript-boilerplate.svg)](https://badge.fury.io/gh/akash-kansara%2Fgraphql-typescript-boilerplate) [![Dependency Status](https://david-dm.org/akash-kansara/graphql-typescript-boilerplate.svg)](https://david-dm.org/akash-kansara/graphql-typescript-boilerplate) [![devDependency Status](https://david-dm.org/akash-kansara/graphql-typescript-boilerplate/dev-status.svg)](https://david-dm.org/akash-kansara/graphql-typescript-boilerplate#info=devDependencies) [![Build Status](https://travis-ci.com/akash-kansara/graphql-typescript-boilerplate.svg?branch=master)](https://travis-ci.com/akash-kansara/graphql-typescript-boilerplate) [![Coverage Status](https://coveralls.io/repos/github/akash-kansara/graphql-typescript-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/akash-kansara/graphql-typescript-boilerplate?branch=master)
 
 This project attempts to provide a simple framework for GraphQL server development using [graphql-yoga](https://github.com/prisma-labs/graphql-yoga) with the freedom of selecting and implementing any database.
 
