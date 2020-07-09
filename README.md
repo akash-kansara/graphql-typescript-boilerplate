@@ -25,10 +25,10 @@ For rest of things such as DB implementation, etc. refer [Project structure](htt
    |     C     |    |            API           |            |      - upload()           |
    |     L     |    |       Depends on SC      |            |      - download()         |
    |     I     |    |                          |     ┌------|                           |------┐
-   |     E     |◄---|   - /upload              |     |      |        Authenticate       |      |
+   |     E     |◄---|   - mutation:upload      |     |      |        Authenticate       |      |
    |     N     |    |      └FM.uploadAuth()    |     |      |      - authUser()         |      |
    |     T     |    |                          |     |      |                           |      |
-   |           |    |  - /download             |     |      |         FileManager       |      |
+   |           |    |  - query:download        |     |      |         FileManager       |      |
    | Calls API |    |     └FM.downloadAuth()   |     |      |      - uploadAuth()       |      |
    └-----------┘    └--------------------------┘     |      |      - downloadAuth()     |      |
                                 ▲                    |      |                           |      |
